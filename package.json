@@ -1,0 +1,27 @@
+{
+  "name": "store-local",
+  "version": "0.0.0",
+  "description": "datastore localstorage plugin",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bredele/store-local.git"
+  },
+  "keywords": [
+    "store",
+    "local",
+    "storage"
+  ],
+  "author": "Olivier Wietrich <olivier.wietrich@gmail.com> (http://github.com/bredele)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bredele/store-local/issues"
+  },
+  "homepage": "https://github.com/bredele/store-local"
+}
