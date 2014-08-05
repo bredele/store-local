@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/bredele/store-local/issues"
   },
-  "homepage": "https://github.com/bredele/store-local"
+  "homepage": "https://github.com/bredele/store-local",
+  "devDependencies": {
+    "mocha": "^1.21.3"
+  }
 }
