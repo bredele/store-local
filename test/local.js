@@ -10,11 +10,27 @@ var assert = require('assert');
 
 describe("local storage", function() {
 
-  it("should add a local handler", function() {
-    var store = new Store();
+  var store;
+  beforeEach(function() {
+    store = new Store({
+      name: 'olivier'
+    });
     store.use(local);
+  });
+  
 
-    assert.equal(typeof store.local, 'function'); 
+  it("should add a local handler", function() {
+    assert.equal(typeof store.local, 'function');
+  });
+
+  it("should persist data in local store", function() {
+    store.local('bredele');
+    assert.equal(localStorage.getItem('bredele'), store.toJSON());
+  });
+
+  it("should synchronize data with local store", function() {
+    store.local('bredele', true);
+    assert.equal(store.get('name'), 'olivier');
   });
   
 });
